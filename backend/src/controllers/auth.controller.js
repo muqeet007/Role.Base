@@ -60,7 +60,7 @@ export const login=async(req,res,next)=>{
     const {email,password}=req.body
 
     if(!email || !password){
-         throw newApiHandler(400,"Email and password are required.")
+         throw new ApiHandler(400,"Email and password are required.")
     }
 
     try{

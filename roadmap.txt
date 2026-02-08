@@ -1,0 +1,242 @@
+🗺️ 20-Day Roadmap
+
+Backend (Days 1–11) → Frontend (Days 12–20)
+
+🔹 BACKEND (Days 1–11)
+
+Day 3 — Auth Utilities & Security Base
+
+Rate limiter middleware
+
+Helmet + CORS
+
+Day 4 — Authentication Routes
+
+Idempotent logout
+
+Day 6 — Admin User Management
+
+Goal: Internal onboarding flow.
+
+GET /users
+
+POST /users
+
+PATCH /users/:id
+
+DELETE /users/:id
+
+Admin-only access
+
+Soft delete or disable users
+
+✅ Done when: Admin can fully manage staff users
+
+Day 7 — Employee CRUD
+
+Goal: Core business functionality.
+
+GET /employees
+
+pagination
+
+filtering
+
+sorting
+
+POST /employees
+
+PATCH /employees/:id
+
+DELETE /employees/:id (Admin only)
+
+✅ Done when: Both roles operate within permissions
+
+Day 8 — Audit Logging
+
+Goal: Traceability.
+
+Log:
+
+user actions
+
+entity affected
+
+timestamp
+
+Middleware-based logging
+
+GET /logs (Admin only)
+
+✅ Done when: All critical actions appear in logs
+
+Day 9 — Centralized Error Handling
+
+Goal: Production-grade error responses.
+
+Consistent error format
+
+Hide stack traces in prod
+
+Day 10 — Security Hardening
+
+Request sanitization
+
+Rate limit auth routes
+
+Token rotation logic
+
+Refresh token reuse detection
+
+Access control tests
+
+✅ Done when: Auth edge cases handled
+
+Day 11 — Backend Finalization
+
+Goal: Backend is DONE.
+
+Seed script for first admin
+
+Postman / Insomnia collection
+
+README (API overview)
+
+Manual testing of all flows
+
+✅ Backend complete and frozen
+
+🔹 FRONTEND (Days 12–20)
+Day 12 — React Setup
+
+Goal: App skeleton.
+
+React project setup
+
+Routing
+
+Global layout
+
+Theme & colors
+
+Fonts (Inter)
+
+✅ Done when: Layout renders
+
+Day 13 — Auth Context & API Layer
+
+Goal: Auth brain.
+
+AuthContext
+
+Axios instance
+
+Cookie-based auth
+
+Token refresh handling
+
+Global 401 handling
+
+✅ Done when: Auth state persists across reloads
+
+Day 14 — Login & Protected Routes
+
+Goal: Secure navigation.
+
+Login page
+
+ProtectedRoute component
+
+Role-based route guards
+
+Redirect logic
+
+✅ Done when: Unauthorized users are blocked
+
+Day 15 — Dashboard & Navigation
+
+Goal: Core UI flow.
+
+Sidebar
+
+Navbar
+
+Role-based menu
+
+Dashboard page
+
+✅ Done when: Admin vs Staff see different UI
+
+Day 16 — User Management (Admin)
+
+Goal: Admin power tools.
+
+Users page
+
+Create/Edit user modal
+
+Disable/delete users
+
+Table + pagination
+
+✅ Done when: Admin can onboard staff
+
+Day 17 — Employees UI
+
+Goal: Main workflow.
+
+Employees page
+
+Data table
+
+Search & filter
+
+Create/Edit modal
+
+✅ Done when: CRUD works smoothly
+
+Day 18 — Permissions & UX Polish
+
+Goal: UX clarity.
+
+Hide forbidden actions
+
+Disable buttons
+
+Empty states
+
+Loading indicators
+
+Toast notifications
+
+✅ Done when: UI feels professional
+
+Day 19 — Audit Logs & Error Pages
+
+Goal: Completion polish.
+
+Logs page (Admin)
+
+403 page
+
+Global error handling
+
+Edge case testing
+
+✅ Done when: Errors are user-friendly
+
+Day 20 — Final QA & Deployment
+
+Goal: Ship it.
+
+Full system testing
+
+Fix bugs
+
+Production build
+
+Environment configs
+
+Final README
+
+🏁 Project complete
